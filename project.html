@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Coffee Shop</title>
+</head>
+<body>
+<h2>Coffee shop</h2>
+
+Iced latte :<input type="text" name="qty1" id="qty1" ng-model="qty1"> <br/>
+
+choclate:<input type="text" name="qty2" id="qty2" ng-model="qty2"> <br/>
+
+vanilla :<input type="text" name="qty3" id="qty3" ng-model="qty3"> <br/>
+
+caramel :<input type="text" name="qty4" id="qty4" ng-model="qty4"> <br/>
+
+
+
+<div>Total: <div> {{qty1 * 3.19}}+{{qty2 * 2.50}}+{{qty3 * 1.89}}+{{qty4 * 4.59}}</div></div>
+
+<h1> sum: {{qty1 * 3.19 -- qty2 * 2.50 -- qty3 * 1.89 -- qty4 * 4.59}}! </h1>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</html>
